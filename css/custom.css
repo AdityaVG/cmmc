@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600;800&display=swap");
+body {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-weight: 600;
+}
+strong {
+  font-weight: 600;
+}
+* {
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ 
+:root {
+  --blue: #7d7bf7;
+}
+/* navbar */
+.navbar-light .navbar-toggler-icon {
+  filter: invert(1);
+  background-image: url("../img/menu.svg");
+  width: 1.3em;
+}
+.navbar-brand {
+  width: 100px;
+}
+.fixed-top {
+  right: 15px;
+  left: 15px;
+}
+.navbar-toggler {
+  border: none;
+}
+.offcanvas {
+  padding: 20px;
+}
+.navbar ul {
+  float: left;
+  margin-left: 0;
+}
+
+/* carousel */
+.carousel-caption {
+  text-align: left;
+  margin-bottom: 2.25rem;
+  max-width: 500px;
+}
+.carousel-caption h3 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.carousel-indicators {
+  display: block;
+  margin-top: 20px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+.carousel-indicators .active {
+  width: 20px;
+}
+ul {
+  float: right;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 5px;
+}
+@media screen and (max-width: 992px) {
+  .carousel-caption h3 {
+    font-size: 2rem;
+  }
+}
+
+/* black section buttons */
+.black-section {
+  position: relative;
+  background-color: #000;
+  padding: 10px 0 70px;
+  margin-top: -2px;
+}
+.black-section .thumbnail {
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+.black-section .thumbnail:hover {
+  border: 1px solid #eee;
+}
+.black-section .thumbnail img {
+  padding: 5px;
+}
+.black-section .thumbnail .figure-caption {
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* models */
+.models {
+  padding: 50px 0;
+}
+.models h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: var(--blue);
+}
+.models p {
+  color: #333;
+  min-height: 100px;
+}
+.models .thumbnail {
+  border-radius: 10px;
+  box-shadow: 0px 3px 11px #eee;
+  padding: 15px;
+}
+
+.models .thumbnail a {
+  position: relative;
+  color: #333;
+}
+.models .thumbnail .link::after {
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  right: -25px;
+  top: 12px;
+  opacity: 0.3;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.models .thumbnail:hover .link::after {
+  right: -35px;
+  opacity: 1;
+}
+.img-box {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.models .thumbnail:hover img {
+  transform: scale(1.031);
+}
+
+/* features */
+.features {
+  padding: 50px 0;
+}
+.features .item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 1s ease;
+}
+.features .item .feature-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+
+.features .item h5 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+.features p {
+  color: #eee;
+  margin-top: 20px;
+}
+
+.item:hover img {
+  /* transform: scale(1.011); */
+}
+@media screen and (min-width: 1200px) {
+  .features .item .feature-caption {
+    height: 48px;
+    bottom: 20px;
+  }
+  .item:hover .feature-caption {
+    bottom: 20px;
+    height: 210px;
+  }
+}
+
+/* contact-us */
+.contact-us {
+  position: relative;
+}
+.contact-us .outer-box {
+  background-color: #f1f6f9;
+}
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    margin-top: 200px; 
+    z-index: 1;
+  }
+  .contact-us::before {
+    content: "";
+    background-image: url(../img/Path5.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: -200px;
+    left: 0;
+    z-index: -1;
+    right: 0px;
+  }
+  .contact-us::after {
+    content: "";
+    background-image: url(../img/Path6.png);
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: -223px;
+    left: 0;
+    z-index: -1;
+    right: 0px;
+  }
+}
+.contact-us h6 {
+  font-weight: 600;
+}
+
+/* footer */
+footer {
+  background-color: #14274e;
+}
+
+footer .copyrights {
+  color: #aaa;
+  font-size: 10px;
+}
+.footerlinks li {
+  padding: 0 20px;
+  margin-left: 0;
+  display: inherit;
+}
+@media screen and (min-width: 1200px) {
+  .footerlinks li {
+    display: inline-block;
+  }
+}
+.footerlinks a {
+  color: #fff;
+}
