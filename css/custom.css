@@ -188,6 +188,16 @@ ul li {
   transform: scale(1.031);
 }
 
+/* map */
+.map {
+  background-color: #f1f6f9;
+  padding: 70px 0;
+  
+}
+#map{
+  max-width: 600px!important;
+  margin: auto;
+}
 /* features */
 .features {
   padding: 50px 0;

@@ -48,6 +48,8 @@ $(document).ready(function () {
     }
   });
 
+  jQuery('#map a').css('filter','invert(1)')
+
 });
 
 
