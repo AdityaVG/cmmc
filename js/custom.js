@@ -48,15 +48,9 @@ $(document).ready(function () {
     }
   });
 
-  jQuery('#map a').css('filter','invert(1)')
+  $('.offcanvas-body .nav-link').click(function(){ 
+   });
 
 });
 
-
-$(document).on('scroll', function () { 
-  if ($(window).scrollTop() > 700) {
-    $('.navbar').addClass('change-color');
-  } else {
-    $('.navbar').removeClass('change-color');
-  }
-});
+ 
