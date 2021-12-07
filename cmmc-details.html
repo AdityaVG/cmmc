@@ -19,11 +19,21 @@
   <header>
     <nav class="navbar navbar-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="./img/USGOVCERT-Logo-horiz.png" alt=""></a>
+        <div class="align-items-center d-flex">
+          <ul class="d-none d-md-block">
+            <li><a href=""><img class="social-link" src="./img/facebook.png" alt=""></a></li>
+            <li><a href=""><img class="social-link" src="./img/instagram.png" alt=""></a></li>
+            <li><a href=""><img class="social-link" src="./img/twitter.png" alt=""></a></li>
+            <li><a href=""><img class="social-link" src="./img/linkedin.png" alt=""></a></li>
+            <li><a href=""><img class="social-link" src="./img/youtube.png" alt=""></a></li>
+          </ul>
+          <button class="navbar-toggler pl-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
@@ -32,25 +42,25 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" data-bs-dismiss="offcanvas" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Models/Standards</a>
+                <a class="nav-link" href="#models">Models/Standards</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Our Network</a>
+                <a class="nav-link" href="#mapBox">Our Network</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resellers</a>
+                <a class="nav-link" href="#tables">Resellers/Consultants</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Success Stories</a>
+                <a class="nav-link" href="#stories">Success Stories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contactUs">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -59,15 +69,7 @@
     </nav>
   </header>
   <section>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <ul>
-          <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
-          <li><a href=""><img src="./img/instagram.png" alt=""></a></li>
-          <li><a href=""><img src="./img/twitter.png" alt=""></a></li>
-          <li><a href=""><img src="./img/youtube.png" alt=""></a></li>
-        </ul>
-      </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> 
       <div class="carousel-inner">
         <div class="carousel-item active">
           <picture>
@@ -185,11 +187,13 @@
             <h2>Say hello to US</h2>
             <p> Lets talk business or just have a coffee. <br>We would love to hear form you! </p>
             <h6 class="mt-4">ADDRESS</h6>
-            <p>400 Broad St, Seattle,<br> WA 98109, United States</p>
-            <h6 class="mt-4">Contact Number</h6>
-            <p>+41 7823 6813</p>
+            <p>USGOVCERT corporation
+              1800 Diagonal Road, <br>Suite 600
+              Alexandria, <br>VA 22316</p>
+            <h6 class="mt-4">Fax</h6>
+            <p>866-671-0076</p>
             <h6 class="mt-4">Email ID</h6>
-            <p>conatct@emial.xyz</p>
+            <p>info@usgovcert.net </p>
           </div>
           <div class="col-xl-7">
             <iframe
@@ -214,11 +218,12 @@
           <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
           <li><a href=""><img src="./img/instagram.png" alt=""></a></li>
           <li><a href=""><img src="./img/twitter.png" alt=""></a></li>
+          <li><a href=""><img src="./img/linkedin.png" alt=""></a></li>
           <li><a href=""><img src="./img/youtube.png" alt=""></a></li>
         </ul>
       </div>
       <div class="row">
-        <span class="copyrights">© 2018 - All Rights Reserved</span>
+        <span class="copyrights">© 2021 - All Rights Reserved</span>
       </div>
     </div>
   </footer>
