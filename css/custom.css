@@ -437,3 +437,9 @@ footer .copyrights {
   list-style-type: disc;
   display: list-item;
 }
+
+.feature-img{
+  padding: 7px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+}
