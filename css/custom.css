@@ -25,7 +25,9 @@ strong {
 :root {
   --blue: #292866;
 }
-
+.modal-backdrop{
+  z-index: 1040;
+}
 /* navbar */
 .navbar {
   background-color: #fff;
