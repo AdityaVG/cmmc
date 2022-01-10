@@ -49,7 +49,22 @@ $(document).ready(function () {
   });
 
   $('.offcanvas-body .nav-link').click(function(){ 
+    
+    setTimeout(function(){
+      $("#closeMenu").trigger("click");
+      console.log("sdsdsd");
+    }, 450); 
+
    });
+   
+   $('#findConsultants').click(function(){ 
+    $("#consultants").trigger("click");
+  });
+
+  $('#findReseller').click(function(){ 
+    $("#reseller").trigger("click");
+  });
+  
 
 });
 
